@@ -1,7 +1,51 @@
+/* GitHub Copilot (GPT-5) was used to assist in creating and styling the summary table */
+
 #identification{ 
     text-align: center;
 }
 body {
 font-family: 'Oswald', sans-serif;
 background-color:  #b8b5ae;
+}
+
+/* Table styling (restored) */
+.info-table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    min-width: 500px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.info-table th, .info-table td {
+    border: 1px solid #444;
+    padding: 8px 14px;
+    text-align: left;
+}
+
+.info-table th {
+    background: #333;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.info-table td[rowspan] {
+    background: #e3ded6;
+    font-size: 1.05em;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.info-table tr:nth-child(even):not(:first-child) td:not([rowspan]) {
+    background: #f5f3f0;
+}
+
+/* Optional citation styling if added later */
+.ai-citation {
+    font-size: 0.75rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 8px;
+    opacity: 0.8;
 }
