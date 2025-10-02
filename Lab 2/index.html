@@ -17,7 +17,7 @@
 
 
 <h2>Simple Calculator</h2>
-    <form name="simpleCalc" onsubmit="return false">
+    <form name="simpleCalculator" onsubmit="return false">
         <label> Enter the expression </label>
         <input type="text" name="operand1" value="" />
         <select name="operator">
@@ -27,7 +27,8 @@
             <option value="/">/</option>
         </select>
         <input type="text" name="operand2" value="" /> 
-        
+        <button onclick="calculate()"> = </button>
+        <input class="readOnlyTextBox" type="text" name="result" value="" readonly /> <br/>
         </form>
 
 </body>
