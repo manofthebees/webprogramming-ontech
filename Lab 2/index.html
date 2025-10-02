@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Programming - Lab 2</title>
+</head>
+<body>
+
+<script src="script.js"></script>
+<h2>Google Search Wrapper</h2>
+     <form name="searchForm" action="https://www.google.com/search?"
+        onsubmit="return validateSearchForm()">
+        <label>Search Query </label> <input type="text" id="searchText" name="q" value="">
+        <input type="submit" value="Google Search"> <br/><br/>
+    </form>
+
+
+<h2>Simple Calculator</h2>
+    <form name="simpleCalc" onsubmit="return false">
+        <label> Enter the expression </label>
+        <input type="text" name="operand1" value="" />
+        <select name="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="text" name="operand2" value="" /> 
+        
+        </form>
+
+</body>
+</html>
