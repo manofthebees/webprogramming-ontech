@@ -59,7 +59,7 @@ function clr(formName) {
 function solve(formName) {
     let x = document.forms[formName]["result"].value;
     let y = math.evaluate(x);
-    document.forms[formName]["result"].value = x + " = " + y;
+    document.forms[formName]["result"].value = y ;
 }
 
 function delChar(formName) {

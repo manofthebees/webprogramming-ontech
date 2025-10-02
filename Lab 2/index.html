@@ -11,7 +11,7 @@
 <script src="script.js"></script>
 <h2>Google Search Wrapper</h2>
      <form name="searchForm" action="https://www.google.com/search?"
-        onsubmit="return validateSearchForm()">
+        onsubmit="return validateSearchForm()" target="_blank">
         <label>Search Query </label> <input type="text" id="searchText" name="q" value="">
         <input type="submit" value="Google Search"> <br/><br/>
     </form>
@@ -101,12 +101,11 @@
     <form name="proCalculator3" onsubmit="return false;">
         <table id="calculator">
             <tr>
-                <td colspan="3"><input class="result" type="text" name="result" readonly></td>
-                <td><input type="button" class="key" value="c" onclick="clr('proCalculator3')" /></td>
+                <td colspan="4"><input class="result" type="text" name="result" readonly></td>
             </tr>
             <script>
                 const keys2 = [
-                    ['(', ')', 'D', ''],
+                    ['(', ')', 'D', 'C'],
                     ['1', '2', '3', '/'],
                     ['4', '5', '6', '*'],
                     ['7', '8', '9', '-'],
@@ -126,6 +125,9 @@
                         }
                         else if (keys2[i][j] === 'D') {
                             document.write('<td><input type="button" class="key" value="D" onclick="delChar(\'proCalculator3\')"></td>\n');
+                        }
+                        else if (keys2[i][j] === 'C'){
+                            document.write('<td><input type="button" class="key" value="C" onclick="clr(\'proCalculator3\')"></td>\n');
                         }
                         else {
                             document.write('<td><input type="button" class="key" value="' + keys2[i][j]);
